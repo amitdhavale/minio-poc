@@ -1,0 +1,94 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>MinioPOC</name>
+    </assembly>
+    <members>
+        <member name="M:MinioPOC.Controllers.MinioController.ListBuckets">
+            <summary>
+            List all buckets
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MinioPOC.Controllers.MinioController.ListIncompleteUploadsInBucket(System.String)">
+            <summary>
+            List incomplete uploads in bucket
+            </summary>
+            <param name="bucketName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MinioPOC.Controllers.MinioController.ListObjects(System.String)">
+            <summary>
+            List Objects In Bucket 
+            </summary>
+            <param name="bucketName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MinioPOC.Controllers.MinioController.ListObjectMetadata(System.String,System.String)">
+            <summary>
+            Get Object Metadata
+            </summary>
+            <param name="bucketName"></param>
+            <param name="objectName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MinioPOC.Controllers.MinioController.GetObjectAsFile(System.String,System.String)">
+            <summary>
+            Get Object In Stream
+            </summary>
+            <param name="bucketName"></param>
+            <param name="objectName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MinioPOC.Controllers.MinioController.CreateBucket(System.String)">
+            <summary>
+            Create a bucket if it doesnt exist
+            </summary>
+            <param name="bucketName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MinioPOC.Controllers.MinioController.CreateObject(System.String,System.String,Microsoft.AspNetCore.Http.IFormFile)">
+            <summary>
+            Post Object To Bucket
+            </summary>
+            <param name="bucketName"></param>
+            <param name="objectName"></param>
+            <param name="file"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MinioPOC.Controllers.MinioController.CopyObject(System.String,System.String,System.String,System.String)">
+            <summary>
+            Copy object from a bucket to another object in different bucket
+            </summary>
+            <param name="sourceBucket"></param>
+            <param name="sourceObject"></param>
+            <param name="destinationBucket"></param>
+            <param name="destinationObject"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MinioPOC.Controllers.MinioController.RemoveObject(System.String,System.String)">
+            <summary>
+            Remove single object from bucket
+            </summary>
+            <param name="bucketName"></param>
+            <param name="objectName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MinioPOC.Controllers.MinioController.RemoveListOfObjectsFromBucket(System.String,System.Collections.Generic.List{System.String})">
+            <summary>
+            Removes list of objects from bucket
+            </summary>
+            <param name="bucketName"></param>
+            <param name="objectList"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MinioPOC.Controllers.MinioController.RemoveIncompleteObjectsFromBucket(System.String,System.String)">
+            <summary>
+            Removes partially uploaded object
+            </summary>
+            <param name="bucketName"></param>
+            <param name="objectName"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
